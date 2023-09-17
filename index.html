@@ -16,10 +16,10 @@
     tailwind.config = {
       theme: {
         extend: {
+          screens: {
+            'sm': '576px',
+          },
           colors: {
-            screens: {
-              'sm': '576px',
-            },
             violet: 'hsl(257, 40%, 49%)',
             softMagenta: 'hsl(300, 69%, 71%)',
           },
@@ -40,19 +40,49 @@
   </script>
 </head>
 
-<body>
+<body
+  class="flex flex-col justify-between w-screen h-screen p-9 bg-violet bg-mobile bg-contain bg-no-repeat text-white">
 
-  Build The Community Your Fans Will Love
+  <main class="flex flex-col mb-16">
+    <header class="grid w-full justify-items-start mb-14">
+      <img class="w-32 h-8" src="images/logo.svg" alt="page logo">
+    </header>
+    <div class="grid place-items-center">
+      <img class="flex mb-14" src="images/illustration-mockups.svg" alt="illustraction mockups">
+      <h1 class="font-poppins text-2xl font-semibold leading-9 text-center mb-4">
+        Build The Community Your Fans Will Love
+      </h1>
+      <p class="font-open-sans text-base font-normal text-center leading-6 mb-6">
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.
+      </p>
+      <button class="w-48 h-10 bg-white text-xs font-poppins text-black rounded-[20px] shadow-custom">
+        Register
+      </button>
+    </div>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-  Create connections with your users as you engage in genuine discussion.
+  </main>
+  <footer class="grid w-full place-items-center pb-5">
+    <div class="flex w-full justify-center gap-4">
+      <a href="#" class="flex items-center justify-center w-8 h-8 border rounded-full border-white">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </a>
 
-  Register
-
-  <footer>
-    <p class="attribution hidden">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/maciejnarejko">Maciej Narejko</a>.
+      <a href="#" class="flex items-center justify-center w-8 h-8 border rounded-full border-white">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="flex items-center justify-center w-8 h-8 border rounded-full border-white">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+    </div>
+    <p class="text-center hidden">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        class="underline underline-offset-4">
+        Frontend Mentor
+      </a>.
+      Coded by <a href="https://github.com/maciejnarejko" class="underline underline-offset-4">
+        Maciej Narejko
+      </a>.
     </p>
   </footer>
 </body>
