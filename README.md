@@ -1,11 +1,11 @@
 <h1 align="center">Huddle landing page with a single introductory section</h1>
 <div align="center">
   <h3>
-    <a href="#">
+    <a href="https://maciejnarejko.github.io/huddle-landing-page-with-single-introductory-section/">
       Live
     </a>
     | 
-    <a href="#">
+    <a href="https://www.frontendmentor.io/solutions/tailwind-css-classonly-huddle-landing-page-with-single-section-peghlzSxXj">
       Solution
     </a>
     | 
